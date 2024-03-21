@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.menu {
+    display: flex;
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+        a {
+            color: variaveis.$cor-texto-menu;
+            text-decoration: none;
+        }
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: variaveis.$cor-fundo-botao;
+    color: variaveis.$cor-texto-menu;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+    &:hover {
+        background-color: variaveis.$cor-fundo-botao-hover;
+    }
+}
